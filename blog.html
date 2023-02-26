@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body style="background: #08237e;">
+  <section class="blog-area">
+    <div class="container">
+      <div class="single-blog">
+        <div class="blog-title">
+          <h3>What is DOM and what is the purpose of DOM?</h3>
+        </div>
+        <div class="blog-content">
+          <p>DOM stands for Document Object Model. By using it, we can create, change, or remove the document
+            structure, style, and
+            content. In order to make our page more dynamic, we can also add events to the elements.
+            It represents the web page as a tree of objects or as a tree of nodes. A node represents an HTML
+            element.
+          <p class="sub-para">Purpose of DOM:</p>
+          <p>1. DOM can easily manipulate all HTML elements. Manipulation implies that we can add, change and remove all
+            HTML elements. Apart from that, we can add styling, modify, and remove elements. </p>
+          <p>2. A DOM represents a document as nodes and objects that can be manipulated by programming languages.</p>
+          <p>3. We can modify the class, style, and other attributes of any HTML element.</p>
+          <p>4. It allows create applications that update the data of the page without needing a refresh.</p>
+          </p>
+        </div>
+      </div>
+      <div class="single-blog">
+        <div class="blog-title">
+          <h3>How will you select HTML elements using DOM? Name the DOM methods?</h3>
+        </div>
+        <div class="blog-content">
+          <p>There are many ways in which we can select HTML elements using the Document Object Model (DOM). Such as</p>
+          <ul>
+            <li>getElementsByTagName()</li>
+            <li>getElementsByClassName()</li>
+            <li>getElementById()</li>
+            <li>querySelector()</li>
+            <li>querySelectorAll()</li>
+          </ul>
+          <p>For Example:</p>
+          <div class="blog-img">
+            <img src="./images/getElementById html.png" alt="">
+            <img src="./images/getElementById js.png" alt="">
+          </div>
+          <p class="sub-para mt-3">Some common DOM methods are given below:</p>
+          <p><b>getElementById()</b> : It selects an element by ID</p>
+          <p><b>getElementsByClassName()</b> : It selects all elements that have a particular class name.</p>
+          <p><b>getElementsByTagName()</b> : It returns an array of elements which have a specific tag name.</p>
+          <p><b>createElement()</b> : it is used to create an element & place it anywhere in the DOM structure.</p>
+          <p><b>getAttribute()</b> : It provides the value of any attribute of an element on a page.</p>
+          <p><b>setAttribute()</b>: It sets the value of an attribute on an element.</p>
+          <p><b>innerHTML()</b> : It sets or returns the HTML content.</p>
+          <p><b>appendChild()</b> : It adds a new child node to an element.</p>
+          <p><b>removeChild()</b>: It removes a node from an element.</p>
+        </div>
+      </div>
+      <div class="single-blog">
+        <div class="blog-title">
+          <h3>What is event bubble?</h3>
+        </div>
+        <div class="blog-content">
+          <p>In the DOM (Document Object Model), event bubbling occurs when an element receives an event, and that event
+            is
+            propagated through its ancestor and parent elements until reaching the root element.
+          <p>With it, we can attach listeners to parent elements and handle events triggered on child elements without
+            having to
+            attach listeners to each child element separately.Sometime it is necessary to prevent one trigger on one
+            element from causing multiple triggers on ancestors.</p>
+          </p>
+          <p>
+            There are
+            two methods to prevent event bubbling:</p>
+          <p>1. stopPropagation(): <br>
+            2. stopImmediatePropagation()</p>
+        </div>
+      </div>
+      <div class="single-blog">
+        <div class="blog-title">
+          <h3>What is a callback function and why will you use it?</h3>
+        </div>
+        <div class="blog-content">
+          <p>A callback function is an argument that is passed to another function so that it can be executed in that
+            other function.
+            It run after another function has finished.</p>
+          <p>There are several reasons for using callback functions. The main reason is asynchronous operations, such as
+            fetching
+            data from an API or reading file from a disk. It is often used to handle events, such as when a user clicks
+            on a button
+            or a timer expires.</p>
+          <p>As a result of callback functions, we are able to write code that is more versatile, modulatable, and
+            efficient</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

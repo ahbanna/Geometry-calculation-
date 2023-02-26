@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+.title-area {
+  padding: 30px 0;
+}
+.title-area-content {
+  background: #e7f4fb;
+  display: flex;
+  align-content: space-around;
+  border-radius: 10px;
+  padding: 10px 30px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog-link button {
+  background: #1090d8;
+  border: navajowhite;
+  padding: 10px 25px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.section-title h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.section-title h4 {
+  color: #707070;
+  font-size: 22px;
+}
+/* Geometry area */
+.single-item,
+.area-calculation-area {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.single-item h4 {
+  font-size: 25px;
+  font-weight: 700;
+  padding-top: 35px;
+}
+.single-item img {
+  width: 260px;
+  height: 190px;
+}
+.input-field {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 11px;
+}
+.input-field input {
+  width: 85px;
+  border: navajowhite;
+  background: #f1f1f1;
+  padding: 0 12px;
+  height: 32px;
+  border-radius: 4px;
+}
+.input-field span {
+  color: #414141;
+  padding: 0 10px 0 5px;
+}
+.single-item button {
+  background: #1090d8;
+  border: none;
+  width: 230px;
+  height: 40px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+/* Area Calculation  */
+.area-calculation-area {
+  min-height: 446px;
+}
+.area-calculation-area h4 {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-align: center;
+}
+th {
+  padding-right: 12px;
+}
+tr {
+  text-align: left;
+}
+td {
+  margin-right: 10px;
+}
+table {
+  margin-left: 35px;
+  margin-top: 20px;
+  text-align: center;
+}
+button.conversion-btn {
+  background: #1090d8;
+  border: navajowhite;
+  color: #fff;
+  font-weight: 600;
+  padding: 3px 5px;
+  margin-bottom: 5px;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  max-width: 1480px;
+}
+
+/* Blog  */
+.single-blog {
+  background: #f6f6f6;
+  border-radius: 10px;
+  padding: 40px;
+  margin: 50px 0;
+}
+.blog-title h3 {
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.blog-content p,
+li {
+  font-size: 17px;
+  text-align: justify;
+  margin-bottom: 8px;
+}
+.sub-para {
+  font-weight: 700;
+}
+.blog-img {
+  display: flex;
+}
+.blog-img img {
+  width: 43%;
+  margin: 0 15px 0 15px;
+  margin: auto;
+  height: 200px;
+}
+
+/* // ---------Responsive---------  */
+@media only screen and (max-width: 576px) {
+  .section-title {
+    text-align: center;
+  }
+  .title-area-content {
+    flex-direction: column;
+  }
+  button.conversion-btn {
+    display: none;
+  }
+  .single-item h4 {
+    padding-top: 10px;
+  }
+  .single-item img {
+    width: 200px;
+    height: 130px;
+  }
+}

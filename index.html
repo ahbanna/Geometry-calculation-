@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometry Genius</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+    <section class="title-area">
+      <div class="container">
+        <div class="title-area-content">
+          <div class="section-title">
+            <h3>Interactive</h3>
+            <h4>Geometry Genius</h4>
+          </div>
+          <div class="blog-link">
+            <button onclick="window.open('blog.html')">Blog</button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="geometry-are">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-4">
+                <!-- triangle -->
+                <div class="single-item" id="random-color">
+                  <img src="images/triangle.png" alt="">
+                  <h4 id="triangle-name">Triangle</h4>
+                  <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> b <i class="fa-solid fa-xmark"></i> h</p>
+                  <div class="input-field">
+                    <input id="triangle-base" type="text" placeholder="b"> <span>cm</span>
+                    <input id="triangle-height" type="text" placeholder="h"> <span>cm</span>
+                  </div>
+                  <button id="triangle-calculate-btn">Calculate</button>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <!-- Rectangle -->
+                <div class="single-item" id="">
+                  <img src="images/rectangle.png" alt="">
+                  <h4 id="rectangle-name">Rectangle</h4>
+                  <p>Area (A) = w <i class="fa-solid fa-xmark"></i> l</p>
+                  <div class="input-field">
+                    <input id="rectangle-width" type="text" placeholder="w"> <span>cm</span>
+                    <input id="rectangle-lenght" type="text" placeholder="l"> <span>cm</span>
+                  </div>
+                  <button id="rectangle-calculate-btn">Calculate</button>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <!-- parallelogram -->
+                <div class="single-item" id="">
+                  <img src="images/parallelogram.png" alt="">
+                  <h4 id="parallelogram-name">Parallelogram</h4>
+                  <p>Area (A) = b <i class="fa-solid fa-xmark"></i> h</p>
+                  <div class="input-field">
+                    <input id="parallelogram-base" type="text" placeholder="b"> <span>cm</span>
+                    <input id="parallelogram-height" type="text" placeholder="h"> <span>cm</span>
+                  </div>
+                  <button id="parallelogram-calculate-btn">Calculate</button>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <!-- Rhombus -->
+                <div class="single-item" id="">
+                  <img src="images/rhombus.png" alt="">
+                  <h4 id="rhombus-name">Rhombus</h4>
+                  <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> d <sub>1</sub> <i class="fa-solid fa-xmark"></i>
+                    d <sub>2</sub></p>
+                  <div class="input-field">
+                    <input id="diagonal1" type="text" placeholder="d1"> <span>cm</span>
+                    <input id="diagonal2" type="text" placeholder="d2"> <span>cm</span>
+                  </div>
+                  <button id="rhombus-calculate-btn">Calculate</button>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <!-- Pentagon -->
+                <div class="single-item" id="">
+                  <img src="images/pentagon.png" alt="">
+                  <h4 id="pentagon-name">Pentagon</h4>
+                  <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> p <i class="fa-solid fa-xmark"></i> b</p>
+                  <div class="input-field">
+                    <input id="pentagon-perimeter" type="text" placeholder="p"> <span>cm</span>
+                    <input id="pentagon-side" type="text" placeholder="b"> <span>cm</span>
+                  </div>
+                  <button id="pentagon-calculate-btn">Calculate</button>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <!-- Ellipse -->
+                <div class="single-item" id="">
+                  <img src="images/ellipse.png" alt="">
+                  <h4 id="ellipse-name">Ellipse</h4>
+                  <p>Area (A) = &pi;ab</p>
+                  <div class="input-field">
+                    <input id="ellipse-length1" type="text" placeholder="a"> <span>cm</span>
+                    <input id="ellipse-length2" type="text" placeholder="b"> <span>cm</span>
+                  </div>
+                  <button id="ellipse-calculate-btn">Calculate</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="area-calculation-area">
+              <h4>Area Calculation</h4>
+              <table>
+                <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Area</th>
+                    <th>Conversion</th>
+                  </tr>
+                </thead>
+                <tbody id="table-content">
+                </tbody>
+
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!------------ all js here -------->
+  <script src="https://kit.fontawesome.com/e09948cd07.js" crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/random-color.js"></script>
+  <script src="./js/call.js"></script>
+  <script src="./js/test.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
